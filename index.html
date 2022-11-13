@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body>
@@ -17,14 +16,15 @@
       <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете
         использовать в своей жизни?
-        <a href="#" class="header__link">Узнать →</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="header__link">Узнать &rarr;</a>
       </p>
-      <img src="./images/two_again.png" alt="Картинка Опять двойка" class="header__main-illustration">
+      <img src="./images/two_again.png" alt="Картинка часть картины Федора Решетникова Опять двойка"
+        class="header__main-illustration">
       <div class="header__square-pic rotation"></div>
     </header>
 
     <main class="content">
-      <section class="description">
+      <section class="description" aria-label="Main problems in studying">
         <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
@@ -95,22 +95,24 @@
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
+        <ul class="video__iframes">
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </li>
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </li>
+        </ul>
       </section>
 
-      <section class="oakley">
+      <section class="oakley" aria-label="Barbara Oakley's history">
         <article class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
-          <div class="two-columns__main-text">
+          <blockquote class="two-columns__main-text">
             <p class="two-columns__paragraph">
               С детства Барбаре не давалась математика. Она считала себя законченным гуманитарием, причём далеко не
               самым умным. В армии она изучала русский язык, чтобы получить надбавку, да так успешно, что её выдвинули в
@@ -118,14 +120,14 @@
               подход к точным наукам. Оказалось, если вам что-то «плохо даётся», ваши добытые трудом знания гораздо
               глубже, чем у тех, кому всё ясно с первого взгляда.
             </p>
-          </div>
+          </blockquote>
         </article>
       </section>
 
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a href="#" class="feynman__link">Подробнее →</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="feynman__link">Подробнее &rarr;</a>
       </section>
 
       <section class="digits">
@@ -189,8 +191,8 @@
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
-            <div class="khan__book-pic"></div>
-            <a href="#" class="khan__buy-link">Купить книгу →</a>
+            <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Книга Салман Хан Весь мир - школа">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="khan__buy-link">Купить книгу &rarr;</a>
           </div>
         </div>
       </section>
@@ -274,22 +276,22 @@
         </p>
         <ul class="resources__logo-zone">
           <li>
-            <a href="#" class="resources__link">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="resources__link">
               <img src="./images/logo/resources-arzamas.svg" alt="Логотип Арзамас" class="resources__logo">
             </a>
           </li>
           <li>
-            <a href="#" class="resources__link">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="resources__link">
               <img src="./images/logo/resources-n1.svg" alt="Логотип Н+1" class="resources__logo">
             </a>
           </li>
           <li>
-            <a href="#" class="resources__link">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="resources__link">
               <img src="./images/logo/resources-strelka.svg" alt="Логотип Стрелка" class="resources__logo">
             </a>
           </li>
           <li>
-            <a href="#" class="resources__link">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="resources__link">
               <img src="./images/logo/resources-polka.svg" alt="Логотип Полка" class="resources__logo">
             </a>
           </li>
@@ -301,32 +303,32 @@
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <img src="./images/logo_place_footer.svg" alt="Логотип" class="logo logo_place_footer">
-          <p class="footer__author">&copy; Виктор Абанькин</p>
+          <p class="footer__author">&copy; Анастасия Клыкова</p>
         </div>
         <nav class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <ul class="footer__column-links">
-            <li><a class="footer__column-link" href="#">Главная</a></li>
-            <li><a class="footer__column-link" href="#">Концепция</a></li>
-            <li><a class="footer__column-link" href="#">Наставники</a></li>
+            <li><a class="footer__column-link" href="#" target="_blank" rel="noopener noreferrer">Главная</a></li>
+            <li><a class="footer__column-link" href="#" target="_blank" rel="noopener noreferrer">Концепция</a></li>
+            <li><a class="footer__column-link" href="#" target="_blank" rel="noopener noreferrer">Наставники</a></li>
           </ul>
         </nav>
         <nav class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links">
             <li>
-              <a class="footer__column-link" href="#">
-                <img class="footer__social-icon" src="./images/youtube-icon.svg" alt="Логотип">YouTube
+              <a class="footer__column-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img class="footer__social-icon" src="./images/youtube-icon.svg" alt="Логотип Ютюб">YouTube
               </a>
             </li>
             <li>
-              <a class="footer__column-link" href="#">
-                <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Логотип">ВКонтакте
+              <a class="footer__column-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Логотип Вконтакте">ВКонтакте
               </a>
             </li>
             <li>
-              <a class="footer__column-link" href="#">
-                <img class="footer__social-icon" src="./images/tiktok-icon.svg" alt="Логотип">TikTok</a>
+              <a class="footer__column-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img class="footer__social-icon" src="./images/tiktok-icon.svg" alt="Логотип ТикТок">TikTok</a>
             </li>
           </ul>
         </nav>

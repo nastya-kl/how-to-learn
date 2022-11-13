@@ -1,7 +1,4 @@
-.cards__item {
-  width: 240px;
+.footer__column {
   display: flex;
   flex-direction: column;
 }
-
-
